@@ -4,10 +4,10 @@ import sys
 import os
 
 if len(sys.argv) == 1:
-    print
-    print " Too few arguments:"
-    print ' script2userbin <inputfile>'
-    print 
+    print ("")
+    print (" Too few arguments:")
+    print ("  script2userbin <inputfile>")
+    print ("")
     sys.exit(2)
     
 scriptname = sys.argv[1]
