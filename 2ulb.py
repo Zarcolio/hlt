@@ -1,13 +1,15 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import sys
 import os
 
+
 if len(sys.argv) == 1:
-    print ("")
-    print (" Too few arguments:")
-    print ("  script2userbin <inputfile>")
-    print ("")
+    print
+    print " Too few arguments:"
+    print ' script2userbin <inputfile>'
+    print 
     sys.exit(2)
     
 scriptname = sys.argv[1]
@@ -18,7 +20,5 @@ retval1 = os.system(chmodcmd)
 scriptpath = os.path.abspath(scriptname)
 scriptname = os.path.splitext(scriptname)[0]
       
-lncmd = "ln -s " + scriptpath+ " /usr/local/bin/" + scriptname
-#print lncmd 
-
+lncmd = "ln -s " + "\"" + scriptpath + "\"" + " \"/usr/local/bin/" + scriptname + "\"" 
 retval2 = os.system(lncmd)
