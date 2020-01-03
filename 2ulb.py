@@ -8,10 +8,10 @@ if os.geteuid() != 0:
     exit("\nYou need to have root privileges to run this script.\nPlease try again using the sudo command.\n")
 
 if len(sys.argv) == 1:
-    print ("\n")
-    print ("Too few arguments:")
-    print ("2ulb.py <inputfile> [-f]")
-    print ("\n")
+    print ("\nToo few arguments:")
+    print ("sudo python 2ulb.py <inputfile> [-f]\n")
+    print("Or after using 2ulb on 2ulb:")
+    print ("sudo 2ulb <inputfile> [-f]\n")
     sys.exit(2)
 
 if len(sys.argv) == 3:
