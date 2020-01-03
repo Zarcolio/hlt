@@ -4,6 +4,9 @@
 import sys
 import os
 
+if os.geteuid() != 0:
+    exit("\nYou need to have root privileges to run this script.\nPlease try again using the sudo command.\n")
+
 if len(sys.argv) == 1:
     print ("\n")
     print ("Too few arguments:")
