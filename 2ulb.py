@@ -22,7 +22,7 @@ else:
 scriptname = sys.argv[1]
 scriptfullpath = os.path.abspath(scriptname)
 
-chmodcmd = "chmod +x " + scriptfullpath
+chmodcmd = "chmod +x " + "\"" + scriptfullpath  + "\""
 retval1 = os.system(chmodcmd)
 
 scriptfilename = os.path.split(scriptfullpath)[1]
