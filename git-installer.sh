@@ -7,7 +7,7 @@ if [[ -d "$scriptdir" && $1 ]]
 then
 	pushd $PWD>/dev/null
 	cd $scriptdir
-	git clone $1
+	git clone https://github.com/$1
 	popd
 fi	
 
