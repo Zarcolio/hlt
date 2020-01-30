@@ -8,7 +8,7 @@ then
 	pushd $PWD>/dev/null
 	cd $scriptdir
 	git clone https://github.com/$1
-	popd
+	popd>/dev/null
 fi	
 
 if [[ ! -d "$scriptdir" ]]
