@@ -1,2 +1,0 @@
-linux-image-5.4.0-kali4-amd64
-linux-image-amd64
